@@ -3,6 +3,7 @@ import torchvision.datasets as dataset
 import torchvision.transforms as transforms
 import torch.utils.data as data_utils
 
+torch.backends.cudnn.enabled = False
 
 train_data = dataset.MNIST(root='data/mnist',
                            train=True,
